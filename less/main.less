@@ -1,0 +1,144 @@
+#page {
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* HEADER STYLES */
+.site-header {
+	position: fixed;
+	width: 100%;
+	margin: 0;
+	display: inline-block;
+	z-index: 99;
+}
+
+.site-header:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.site-title {
+	position: absolute;
+	float: left;
+	width: 30%;
+	text-align: right;
+}
+.title-link {
+	position: relative;
+	color: #fff;
+	text-align: right;
+	line-height: 0.75;
+	letter-spacing: -0.1em;
+	z-index: 10;
+	padding-top: 0.1em;
+	text-shadow: -1px -1px 2px #999;
+}
+.site-navigation {
+	position: relative;
+	float: right;
+	width: 70%;
+	text-align: center;
+	opacity: 0;
+	transition: opacity 0.25s;
+	-moz-transition: opacity 0.25s;
+	-webkit-transition: opacity 0.25s;
+	-o-transition: opacity 0.25s;
+}
+
+.page-template-template-grid-php .site-navigation,
+.page-template-template-list-php .site-navigation,
+.page-template-template-about-php .site-navigation {
+	opacity: 1;
+}
+.page-template-template-grid-php .site-navigation:before,
+.page-template-template-list-php .site-navigation:before,
+.page-template-template-about-php .site-navigation:before {
+	opacity: 1;
+	padding-bottom: 1.5em;
+}
+
+.site-navigation:before {
+	position: absolute;
+	top: 0;
+	left: -50%;
+	width: 150%;
+	height: 100%;
+	content: "";
+	background: #000;
+	opacity: 0.65;
+}
+.site-header.active .site-navigation, 
+.site-header:hover .site-navigation {
+	opacity: 1;
+	transition: opacity 0.25s;
+	-moz-transition: opacity 0.25s;
+	-webkit-transition: opacity 0.25s;
+	-o-transition: opacity 0.25s;
+}
+
+.menu-item,
+.page_item {
+	position: relative;
+	float: left;
+	display: block;
+	margin: 0 1em;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.1em;
+	z-index: 99;
+}
+.menu-item a,
+.page_item a {
+	color: #fff;
+	padding: 0.2em 0.5em 0;
+	display: block;
+	transition: color 0.25s;
+	-moz-transition: color 0.25s;
+	-webkit-transition: color 0.25s;
+	-o-transition: color 0.25s;
+}
+.menu-item a:hover,
+.page_item a:hover {
+	color: #999;
+}
+
+.twitter-follow-button {
+	display: none;
+}
+body[data-twttr-rendered=true] .twitter-follow-button {
+	display: block;
+}
+#menu-menu .twitter-follow-button {
+	text-indent: -9999px;
+	font-size: 0.25em;
+	margin: 0 auto;
+	margin-top: 0.2em;
+	overflow: hidden;
+}
+/* HEADER STYLES */
+
+/* CONTENT AREAS */
+.site-main {
+	position: relative;
+	width: 100%;
+	clear: both;
+	margin: 0 auto;
+}
+.site-content {
+	position: relative;
+	width: 100%;
+	margin: 0;
+}
+/* CONTENT AREAS */
+
+/* FOOTER */
+.site-footer {
+	width: 100%;
+	clear: both;
+	text-align: center;
+	margin: 2em 0;
+}
+/* FOOTER */
